@@ -19,7 +19,7 @@
     <link href="vendor/devicons/css/devicons.min.css?h=8d2d31a2" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css?h=3a63cbf3" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/resume.min.css?h=69c7b83a" rel="stylesheet">
+    <link href="css/resume.min.css?h=7fcd3e4d" rel="stylesheet">
       <!-- Google Analytics -->
       
       
@@ -54,29 +54,106 @@
     </nav>
   <div class="page">
     
-<div class="container-fluid p-0">
 
-  <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-    <div class="my-auto">
-      <h1 class="mb-0">Maria
-        <span class="text-primary">Kochetkova</span>
-      </h1>
-      <div class="subheading mb-5">
-      
-      
-        Saint-Petersburg,
-      
-      
-      
-      
-        <a href="mailto:co.kochetkova@gmail.com">co.kochetkova@gmail.com</a>
-      </div>
-      <h2>Welcome to my Portfolio!</h2>
-      <p class="mb-5"><p>Сайт-портфолио студента РГПУ им. А. И. Герцена Кочетковой Марии Павловны</p>
-</p>   
-            <ul class="list-inline list-social-icons mb-0">
-        
-        
+<style>
+
+body {
+  background-image: url('/static/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.container-fluid {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.bottom-left-info {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  padding: 15px;
+  z-index: 100;
+  max-width: 300px;
+}
+
+.bottom-left-info .social-row {
+  margin-bottom: 10px;
+  justify-content: flex-start;
+}
+
+.email-bottom {
+  font-size: 0.9rem;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  margin-top: 5px;
+}
+
+.email-bottom:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.centered-name {
+  margin-bottom: 2rem;
+}
+
+.centered-name h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .centered-name h1 {
+    font-size: 2.5rem;
+  }
+
+  .bottom-left-info {
+    bottom: 15px;
+    left: 15px;
+    padding: 10px;
+    max-width: 250px;
+  }
+
+  #about {
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .centered-name h1 {
+    font-size: 2rem;
+  }
+
+}
+</style>
+
+<div class="bottom-left-info">
+        <ul class="list-inline list-social-icons mb-0">
         
         <li class="list-inline-item">
           <a href="https://t.me/m_mouse18" target="_blank">
@@ -96,16 +173,33 @@
             </span>
           </a>
         </li>
-                
         
-                                     
-        
-                   
       </ul>
+  <a href="mailto:co.kochetkova@gmail.com" class="email-bottom">
+    co.kochetkova@gmail.com
+  </a>
+</div>
+
+<div class="container-fluid p-0">
+  <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+    <div class="my-auto content-container">
+      <!-- Имя и фамилия по центру -->
+      <div class="centered-name">
+        <h1 class="mb-0">
+          Maria
+          <span class="text-primary">Kochetkova</span>
+        </h1>
+      </div>
+
+      <div class="main-content">
+        <p>Сайт-портфолио студента РГПУ им. А. И. Герцена</p>
+<p>В разделах сайта находятся выполненые в процессе обучения работы</p>
+
+      </div>
     </div>
   </section>
-
 </div>
+
 
   </div>
   <footer>
